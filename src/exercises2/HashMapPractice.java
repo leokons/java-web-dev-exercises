@@ -13,7 +13,7 @@ public class HashMapPractice {
             System.out.println("ID: ");
             id = input.nextInt();
             input.nextLine();
-            Integer.parseInt()
+            //Integer.parseInt();
 
             if (!(id==0)) {
                 System.out.println("Name: ");

@@ -10,8 +10,10 @@ public class Studio2 {
                 "that, it’s pretty straightforward from there."; */
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a string for counting letters: ");
-        String text = input.nextLine().toLowerCase().replace(".", "").replace(",", "").replace("/", "").replace("?", "").replace(" ", "");
 
+        String text = input.nextLine().toLowerCase().replaceAll("[^a-z]", "");
+
+        //System.out.println(text);
         char[] charactersInString = text.toCharArray();
         //System.out.println(charactersInString[5]);
 
